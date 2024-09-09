@@ -1,6 +1,11 @@
-This code challenge 02 for phase 3 belongs to Caleb Karimi.
+This phase 3 code challenge 02 belongs to Caleb Karimi.
 
 The guide on how to build various parts of the program if as below:
+
+# Installation
+1. To set up the virtual environment using pipenv, run 'pipenv install' on the terminal then run 'pipenv shell'
+
+2. To install dependencies e.g we would like to use pytest tp run the test, type 'pipenv install pytest' and hit 'Enter'
 
 # Scenario:
 
@@ -64,20 +69,12 @@ In each file, define a class corresponding to the file name (e.g., `class Custom
 
  - Customer Class (`customer.py`):
      - `create_order(coffee, price)` method: Receives a `Coffee` instance and a price, creates a new `Order` instance, and associates it with that customer and the coffee.
-   - Coffee Class (`coffee.py`):
+  - Coffee Class (`coffee.py`):
      - `num_orders()` method: Returns the total number of times a coffee has been ordered.
      - `average_price()` method: Returns the average price for a coffee based on its orders.
  
 
-6. Bonus Task (Optional) 
-
-    - Implement the `most_aficionado(coffee)` class method in the `Customer` class:
-     - Receives a `coffee` object as an argument.
-     - Returns the `Customer` instance that has spent the most money on the provided `coffee`.
-     - Returns `None` if there are no customers for the provided `coffee`.
- 
-
-7. Testing
+6. Testing
 
  - Create a `tests` directory in your project directory.
    - Add test files (`test_customer.py`, `test_coffee.py`, `test_order.py`) to test each class and method.
@@ -85,15 +82,15 @@ In each file, define a class corresponding to the file name (e.g., `class Custom
    - Use `pytest` to run your tests
 
 
-8. Handle Exceptions and Validate Inputs
+7. Handle Exceptions and Validate Inputs
    - Refactor your code to raise exceptions for any invalid inputs:
    - For example, raise an exception if a `Customer` name is not a string or exceeds 15 characters.
    - Use Python's `raise` statement to handle exceptions.
  
 
-9. Debugging and Refactoring
+8. Debugging and Refactoring
 
-Create a debug.py file to test your code interactively.
-Refactor your code to improve readability and maintainability:
-Extract duplicated logic into helper methods.
-Follow Python's PEP 8 guidelines for clean and readable code.
+- Create a debug.py file to test your code interactively.
+- Refactor your code to improve readability and maintainability:
+- Extract duplicated logic into helper methods.
+- Follow Python's PEP 8 guidelines for clean and readable code.
